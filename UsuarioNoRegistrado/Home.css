@@ -29,3 +29,17 @@ body {
     /* Asegura que el header mantenga la altura de la imagen */
     position: relative;
 }
+
+/* Estilo del botón de iniciar sesión */
+.login-button {
+    padding: 10px 20px;
+    background-color: white;
+    color: black;
+    font-size: 16px;
+    text-decoration: none; /* Elimina subrayado */
+    border-radius: 20px;
+    border: 2px solid white;
+    transition: background-color 0.3s ease, border-color 0.3s ease;
+    margin-right: 0; /* Asegura que esté pegado al borde derecho */
+    display: inline-block;
+}
