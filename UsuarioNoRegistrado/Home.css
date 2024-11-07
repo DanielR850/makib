@@ -36,10 +36,49 @@ body {
     background-color: white;
     color: black;
     font-size: 16px;
-    text-decoration: none; /* Elimina subrayado */
+    text-decoration: none;
+    /* Elimina subrayado */
     border-radius: 20px;
     border: 2px solid white;
     transition: background-color 0.3s ease, border-color 0.3s ease;
-    margin-right: 0; /* Asegura que esté pegado al borde derecho */
+    margin-right: 0;
+    /* Asegura que esté pegado al borde derecho */
     display: inline-block;
+}
+
+/* Estilo básico para los botones */
+.dropdown {
+    position: relative;
+    display: inline-block;
+    margin: 50px 80px;
+}
+
+/* Estilo del botón */
+.dropbtn {
+    background-color: lightgoldenrodyellow;
+    color: black;
+    padding: 10px 20px;
+    border-radius: 20px;
+    font-size: 16px;
+    border: none;
+    cursor: pointer;
+}
+
+/* El contenedor de las opciones */
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: white;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.2);
+    z-index: 1;
+    border-radius: 20px;
+}
+
+/* Estilo de las opciones */
+.dropdown-content a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
 }
