@@ -17,6 +17,19 @@ body {
     /* Añade un espacio interno alrededor del contenido */
 }
 
+/* Opcional: Estilos para un contenedor de contenido */
+.content {
+    background-color: rgba(255, 255, 255, 0.8);
+    /* Fondo blanco semitransparente para destacar el texto */
+    padding: 30px;
+    margin: 50px auto;
+    /* Espacio superior e inferior */
+    max-width: 800px;
+    /* Limita el ancho del contenido */
+    border-radius: 10px;
+    /* Bordes redondeados */
+}
+
 .header {
     display: flex;
     align-items: center;
@@ -28,6 +41,12 @@ body {
     height: 150px;
     /* Asegura que el header mantenga la altura de la imagen */
     position: relative;
+}
+
+/* Estilo de la imagen */
+.header img {
+    margin-left: 0;
+    /* Asegura que esté pegada al borde izquierdo */
 }
 
 /* Estilo del botón de iniciar sesión */
