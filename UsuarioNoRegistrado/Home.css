@@ -49,6 +49,30 @@ body {
     /* Asegura que esté pegada al borde izquierdo */
 }
 
+/* Contenedor para centrar el botón de regresar */
+.volver-container {
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    /* Centra el botón */
+}
+
+/* Estilo del botón de regresar */
+#back-button {
+    padding: 10px 300px;
+    /* Aumenta el tamaño del botón */
+    font-size: 18px;
+    /* Aumenta el tamaño del texto */
+    background-color: white;
+    color: black;
+    border: 2px solid white;
+    border-radius: 20px;
+    cursor: pointer;
+    text-decoration: none;
+    /* Elimina subrayado */
+    transition: background-color 0.3s ease, border-color 0.3s ease;
+}
+
 /* Estilo del botón de iniciar sesión */
 .login-button {
     padding: 10px 20px;
