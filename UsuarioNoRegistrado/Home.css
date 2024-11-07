@@ -1,10 +1,31 @@
+body {
+    font-family: Arial, sans-serif;
+    background-image: url(IMG/ImgFondo.JPG);
+    /* Ruta a tu imagen */
+    background-size: 150%;
+    /* Hace que la imagen sea 1.5 veces más grande */
+    background-position: center;
+    /* Centra la imagen de fondo */
+    background-repeat: no-repeat;
+    /* Evita que se repita la imagen */
+    background-attachment: fixed;
+    /* Fija la imagen de fondo para que no se mueva con el scroll */
+
+    margin: 0;
+    /* Elimina los márgenes del body */
+    padding: 20px;
+    /* Añade un espacio interno alrededor del contenido */
+}
+
 .header {
     display: flex;
     align-items: center;
     justify-content: space-between;
-    padding: 0 20px; /* Agrega un pequeño espacio en los lados */
+    padding: 0 20px;
+    /* Agrega un pequeño espacio en los lados */
     width: 100%;
     box-sizing: border-box;
-    height: 150px; /* Asegura que el header mantenga la altura de la imagen */
+    height: 150px;
+    /* Asegura que el header mantenga la altura de la imagen */
     position: relative;
 }
