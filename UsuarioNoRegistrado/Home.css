@@ -1,0 +1,10 @@
+.header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 20px; /* Agrega un pequeño espacio en los lados */
+    width: 100%;
+    box-sizing: border-box;
+    height: 150px; /* Asegura que el header mantenga la altura de la imagen */
+    position: relative;
+}
