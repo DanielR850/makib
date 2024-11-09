@@ -1,33 +1,20 @@
 body {
     font-family: Arial, sans-serif;
     background-image: url(IMG/ImgFondo.JPG);
-    /* Ruta a tu imagen */
     background-size: 150%;
-    /* Hace que la imagen sea 1.5 veces más grande */
     background-position: center;
-    /* Centra la imagen de fondo */
     background-repeat: no-repeat;
-    /* Evita que se repita la imagen */
     background-attachment: fixed;
-    /* Fija la imagen de fondo para que no se mueva con el scroll */
-
     margin: 0;
-    /* Elimina los márgenes del body */
     padding: 20px;
-    /* Añade un espacio interno alrededor del contenido */
 }
 
-/* Opcional: Estilos para un contenedor de contenido */
 .content {
     background-color: rgba(255, 255, 255, 0.8);
-    /* Fondo blanco semitransparente para destacar el texto */
     padding: 30px;
     margin: 50px auto;
-    /* Espacio superior e inferior */
     max-width: 800px;
-    /* Limita el ancho del contenido */
     border-radius: 10px;
-    /* Bordes redondeados */
 }
 
 .header {
@@ -35,84 +22,67 @@ body {
     align-items: center;
     justify-content: space-between;
     padding: 0 20px;
-    /* Agrega un pequeño espacio en los lados */
     width: 100%;
     box-sizing: border-box;
     height: 150px;
-    /* Asegura que el header mantenga la altura de la imagen */
     position: relative;
 }
 
-/* Estilo de la imagen */
 .header img {
     margin-left: 0;
-    /* Asegura que esté pegada al borde izquierdo */
-    width: 150px; /* Ajusta el tamaño según lo que necesites */
-    height: 150px; /* Debe ser igual al width para que sea circular */
+    width: 150px; 
+    height: 150px; 
     border-radius: 50%;
-    object-fit: cover; /* Esto asegura que la imagen se ajuste bien dentro del círculo */
+    object-fit: cover; 
 }
 
-/* Contenedor para centrar el botón de regresar */
 .volver-container {
     position: absolute;
     left: 50%;
     transform: translateX(-50%);
-    /* Centra el botón */
 }
 
-/* Estilo del botón de regresar */
 #back-button {
     padding: 10px 300px;
-    /* Aumenta el tamaño del botón */
     font-size: 18px;
-    /* Aumenta el tamaño del texto */
     background-color: white;
     color: black;
     border: 2px solid white;
     border-radius: 20px;
     cursor: pointer;
     text-decoration: none;
-    /* Elimina subrayado */
     transition: background-color 0.3s ease, border-color 0.3s ease;
 }
 
-/* Efecto hover en el botón de regresar */
 #back-button:hover {
-    background-color: lightgoldenrodyellow; /* Cambia a un color similar al del header */
+    background-color: lightgoldenrodyellow; 
     border-color: lightgoldenrodyellow;
 }
 
-/* Estilo del botón de iniciar sesión */
 .login-button {
     padding: 10px 20px;
     background-color: white;
     color: black;
     font-size: 16px;
     text-decoration: none;
-    /* Elimina subrayado */
     border-radius: 20px;
     border: 2px solid white;
     transition: background-color 0.3s ease, border-color 0.3s ease;
     margin-right: 0;
-    /* Asegura que esté pegado al borde derecho */
     display: inline-block;
 }
 
-/* Efecto hover en el botón de iniciar sesión */
 .login-button:hover {
     background-color: white;
     border-color: white;
 }
 
-/* Estilo básico para los botones */
 .dropdown {
     position: relative;
     display: inline-block;
     margin: 50px 80px;
 }
 
-/* Estilo del botón */
 .dropbtn {
     background-color: lightgoldenrodyellow;
     color: black;
@@ -123,7 +93,6 @@ body {
     cursor: pointer;
 }
 
-/* El contenedor de las opciones */
 .dropdown-content {
     display: none;
     position: absolute;
@@ -134,7 +103,6 @@ body {
     border-radius: 20px;
 }
 
-/* Estilo de las opciones */
 .dropdown-content a {
     color: black;
     padding: 12px 16px;
