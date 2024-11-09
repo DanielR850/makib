@@ -47,6 +47,10 @@ body {
 .header img {
     margin-left: 0;
     /* Asegura que esté pegada al borde izquierdo */
+    width: 150px; /* Ajusta el tamaño según lo que necesites */
+    height: 150px; /* Debe ser igual al width para que sea circular */
+    border-radius: 50%;
+    object-fit: cover; /* Esto asegura que la imagen se ajuste bien dentro del círculo */
 }
 
 /* Contenedor para centrar el botón de regresar */
