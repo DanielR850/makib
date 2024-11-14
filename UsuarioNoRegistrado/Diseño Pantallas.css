@@ -92,8 +92,8 @@ hr {
 }
 
 table {
-    width: 80%; /* Ancho de la tabla */
-    margin: 0 auto; /* Centra la tabla horizontalmente */
+    width: 80%; 
+    margin: 0 auto; 
     border-collapse: collapse;
 }
 
@@ -101,7 +101,7 @@ th, td {
     padding: 15px;
     border: 1px solid #333;
     text-align: left;
-    width: 20%; /* Ancho uniforme para cada columna (100% / 5 columnas) */
+    width: 20%; 
 }
 
 th {
