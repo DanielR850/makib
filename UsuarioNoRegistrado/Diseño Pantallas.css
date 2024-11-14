@@ -90,3 +90,25 @@ hr {
     height: auto; 
     margin: 0 30px; 
 }
+
+table {
+    width: 80%; /* Ancho de la tabla */
+    margin: 0 auto; /* Centra la tabla horizontalmente */
+    border-collapse: collapse;
+}
+
+th, td {
+    padding: 15px;
+    border: 1px solid #333;
+    text-align: left;
+    width: 20%; /* Ancho uniforme para cada columna (100% / 5 columnas) */
+}
+
+th {
+    background-color: red;
+    color: white;
+}
+
+td {
+    background-color: lightgoldenrodyellow;
+}
