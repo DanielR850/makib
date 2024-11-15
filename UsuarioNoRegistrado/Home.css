@@ -109,3 +109,56 @@ body {
     text-decoration: none;
     display: block;
 }
+
+#frase {
+    text-align: right;
+    transform: translate(0px, 70px);
+}
+
+hr {
+    border: none;
+    height: 10px;
+    background-color: red;
+    width: 100%;
+    position: absolute; 
+    transform: translate(-20px, 150px);
+    z-index: 1000; /* Asegura que la línea esté encima de la imagen */
+}
+
+.custom-carousel-container {
+    background-color: #f8f9fa;
+    padding: 10px 0;
+    height: 100px; 
+}
+
+.carousel-inner {
+    display: flex;
+    align-items: center;
+}
+
+.carousel-item {
+    display: flex;
+    justify-content: center;
+    gap: 5px; 
+    padding: 1% 10%;
+}
+
+.custom-carousel-img {
+    width: 80px;
+    height: 80px;
+    object-fit: cover; 
+    margin: 0 10px; 
+    border-radius: 5px; 
+    background-color: lightgoldenrodyellow; 
+}
+
+.carousel-control-prev-icon,
+.carousel-control-next-icon {
+    background-color: black;
+    border-radius: 50%;
+}
+
+.carousel-control-prev,
+.carousel-control-next {
+    width: 5%;
+}
