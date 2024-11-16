@@ -121,14 +121,14 @@ hr {
     background-color: red;
     width: 100%;
     position: absolute; 
-    transform: translate(-20px, 150px);
-    z-index: 1000; /* Asegura que la línea esté encima de la imagen */
+    transform: translate(-20px, 125px);
+    z-index: 1000; 
 }
 
 .custom-carousel-container {
     background-color: #f8f9fa;
     padding: 10px 0;
-    height: 100px; 
+    height: 130px; 
 }
 
 .carousel-inner {
@@ -161,4 +161,100 @@ hr {
 .carousel-control-prev,
 .carousel-control-next {
     width: 5%;
+}
+
+.contact-us-button {
+    position: fixed;
+    bottom: 0px;
+    left: 50%;
+    transform: translateX(-50%);
+    padding: 2px 250px;
+    background-color: black;
+    color: white;
+    font-size: 18px;
+    border-radius: 50px;
+    text-decoration: none;
+    z-index: 1050;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+    transition: all 0.3s ease;
+}
+
+.contact-us-button:hover {
+    background-color: black;
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.5);
+}
+
+.contact-us-button {
+    position: fixed;
+    bottom: 0px;
+    left: 50%;
+    transform: translateX(-50%);
+    padding: 2px 250px;
+    background-color: black;
+    color: white;
+    font-size: 18px;
+    border-radius: 50px;
+    text-decoration: none;
+    z-index: 1050;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+    transition: all 0.3s ease;
+}
+
+.contact-us-button:hover {
+    background-color: black;
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.5);
+}
+
+.wide-dropdown {
+    position: relative;
+    display: inline-block;
+    width: 100%; 
+}
+
+.wide-dropdown-menu {
+    display: none; 
+    position: fixed; 
+    left: 0;
+    width: 100%; 
+    background-color: black;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+    z-index: 1100; 
+    padding: 45px; 
+    box-sizing: border-box;
+    max-height: 80vh; 
+    overflow-y: auto; 
+}
+
+.wide-info-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr); 
+    gap: 10px;
+}
+
+.info-section {
+    background-color: black;
+    color: white;
+    padding: 15px;
+    border-radius: 5px;
+    text-align: center;
+    border: 1px solid black;
+    transition: all 0.2s ease;
+}
+
+.info-section img {
+    width: 80px; 
+    height: 80px; 
+    object-fit: cover; 
+    border-radius: 5px;
+    margin-bottom: 10px;
+}
+
+.info-section h3 {
+    font-size: 20px;
+    margin: 0;
+}
+
+.info-section:hover {
+    background-color: lightgoldenrodyellow;
+    border-color: lightgoldenrodyellow;
 }

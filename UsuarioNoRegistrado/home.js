@@ -15,6 +15,18 @@ dropdowns.forEach(dropdown => {
   });
 });
 
-document.getElementById('back-button').addEventListener('click', function() {
-  location.href = 'Home.html'; 
+
+const dropdownButton = document.querySelector('.contact-us-button');
+const dropdownMenu = document.querySelector('.wide-dropdown-menu');
+
+dropdownButton.addEventListener('click', (event) => {
+    event.preventDefault(); 
+    dropdownMenu.style.display = dropdownMenu.style.display === 'block' ? 'none' : 'block';
+});
+
+document.addEventListener('click', (event) => {
+    const isClickInside = dropdownButton.contains(event.target) || dropdownMenu.contains(event.target);
+    if (!isClickInside) {
+        dropdownMenu.style.display = 'none';
+    }
 });
