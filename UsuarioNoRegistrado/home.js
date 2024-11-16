@@ -15,6 +15,9 @@ dropdowns.forEach(dropdown => {
   });
 });
 
+document.getElementById('back-button').addEventListener('click', function() {
+  location.href = 'Home.html'; 
+});
 
 const dropdownButton = document.querySelector('.contact-us-button');
 const dropdownMenu = document.querySelector('.wide-dropdown-menu');
