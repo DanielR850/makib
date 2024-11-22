@@ -1,0 +1,12 @@
+# Ignorar carpetas y archivos específicos de Visual Studio
+.vs/
+bin/
+obj/
+*.user
+*.suo
+*.dbmdl
+*.jfm
+
+# Ignorar appsettings.json para no subir información sensible
+appsettings.json
+appsettings.Development.json
