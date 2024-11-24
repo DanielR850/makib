@@ -34,5 +34,13 @@ namespace PIA_PROGRAMACIONWEB.Controllers
         {
             return View();
         }
+        public IActionResult ProximosEventos()
+        {
+            return View();
+        }
+        public IActionResult Audiciones()
+        {
+            return View();
+        }
     }
 }
