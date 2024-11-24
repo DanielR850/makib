@@ -1,67 +1,81 @@
 ﻿@{
-    ViewData["Title"] = "Bailarín";
+    ViewData["Title"] = "Home Bailarín";
 }
+
 @section Styles {
-    <link rel="stylesheet" href="~/css/CSSUsuarioBailarin/PantallaHomeBailarines.css" />
+    <link rel="stylesheet" href="/css/CSSUsuarioBailarin/PantallaHomeBailarines.css" />
 }
 
+<div class="background-image">
+    <img src="/Img/UsuarioBailarin/ImagenFondoPaginaHome.jpg" alt="Fondo Ballet" class="background-img">
+</div>
 
-
-<header class="header">
-    <img src="~/Img/UsuarioBailarin/Logo.png" alt="Logo BAF" class="logo">
-    <h1>Bailarín</h1>
-    <div class="user-info">
-        <span>Nombre del Usuario</span>
-    </div>
-</header>
-
-<main>
-    <section class="actions text-center my-4">
-        <button class="btn">Asistencia a ensayos</button>
-        <button class="btn">Asistencia a audiciones</button>
-        <button class="btn">Asistencia a eventos</button>
-    </section>
-
-    <section class="hero text-center py-5 text-light" style="background: url('@Url.Content("~/img/background.jpg")') no-repeat center center / cover;">
-        <h2>Se agrega una frase icónica del ballet</h2>
-    </section>
-
-    <section class="gallery text-center py-4">
-        <button class="gallery-arrow" id="prevGallery">‹</button>
-        <div class="gallery-container d-inline-flex">
-            <img src="@Url.Content("~/img/gallery1.jpg")" alt="Imagen 1" class="gallery-item">
-            <img src="@Url.Content("~/img/gallery2.jpg")" alt="Imagen 2" class="gallery-item">
-            <img src="@Url.Content("~/img/gallery3.jpg")" alt="Imagen 3" class="gallery-item">
+<div class="overlay-container">
+    <!-- Header -->
+    <header class="header">
+        <div class="logo-container">
+            <img src="/Img/UsuarioBailarin/Logo.png" alt="Logo Ballet Alianza Folklórica" class="logo">
         </div>
-        <button class="gallery-arrow" id="nextGallery">›</button>
-    </section>
-</main>
+        <div class="title-container">
+            <span class="title-box">Bailarín</span>
+        </div>
+        <div class="user-container">
+            <span class="user-box">Nombre del Usuario</span>
+        </div>
+    </header>
 
+    <!-- Navbar -->
+    <nav class="navbar">
+        <ul class="nav-list">
+            <li class="nav-item"><a href="#" class="nav-link">Asistencia a ensayos</a></li>
+            <li class="nav-item"><a href="#" class="nav-link">Asistencia a eventos</a></li>
+            <li class="nav-item dropdown">
+                <a href="#" class="nav-link dropdown-toggle">Historial</a>
+                <ul class="dropdown-menu">
+                    <li><a href="#" class="dropdown-link">Historial de ensayos</a></li>
+                    <li><a href="#" class="dropdown-link">Historial de eventos</a></li>
+                </ul>
+            </li>
+        </ul>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="hero">
+        <div class="hero-text">
+            <h2>Se agrega una frase icónica del ballet</h2>
+        </div>
+    </section>
+</div>
+<div class="red-line"></div>
+
+<!-- Footer -->
 <footer class="footer">
-    <div class="footer-header">
-        <span>Contactanos</span>
-        <button id="toggleFooter" class="toggle-button">⬆</button>
-    </div>
-    <div id="footerContent" class="footer-content">
-        <div class="carousel-container">
-            <button id="prevButton" class="carousel-button">⬅</button>
-            <div class="carousel">
-                <img src="@Url.Content("~/img/icon1.png")" alt="Icon1" class="carousel-item" />
-                <img src="@Url.Content("~/img/icon2.png")" alt="Icon2" class="carousel-item" />
-                <img src="@Url.Content("~/img/icon3.png")" alt="Icon3" class="carousel-item" />
-                <img src="@Url.Content("~/img/icon4.png")" alt="Icon4" class="carousel-item" />
-            </div>
-            <button id="nextButton" class="carousel-button">➡</button>
+    <section class="carousel">
+        <div class="carousel-header">
         </div>
-        <div class="social-icons text-center mt-3">
-            <a href="#"><img src="@Url.Content("~/img/tiktok.png")" alt="TikTok"></a>
+        <button class="carousel-arrow left">‹</button>
+        <div class="carousel-images">
+            <img src="/Img/UsuarioBailarin/gallery1.jpg" alt="Imagen 1">
+            <img src="/Img/UsuarioBailarin/gallery2.jpg" alt="Imagen 2">
+            <img src="/Img/UsuarioBailarin/gallery3.jpg" alt="Imagen 3">
+        </div>
+        <button class="carousel-arrow right">›</button>
+        <div class="footer-toggle">
+            <span>Contáctanos</span>
+            <button class="toggle-button">⬆</button>
+        </div>
+    </section>
+    <div class="footer-content">
+        <div class="social-icons">
+            <a href="#"><img src="/Img/TikTokIcon.png" alt="TikTok"></a>
             <span>XXXXXX</span>
-            <a href="#"><img src="@Url.Content("~/img/whatsapp.png")" alt="WhatsApp"></a>
+            <a href="#"><img src="/Img/WhatsAppIcon.png" alt="WhatsApp"></a>
             <span>XXXXXX</span>
-            <a href="#"><img src="@Url.Content("~/img/facebook.png")" alt="Facebook"></a>
+            <a href="#"><img src="/Img/FacebookIcon.png" alt="Facebook"></a>
             <span>XXXXXX</span>
-            <a href="#"><img src="@Url.Content("~/img/instagram.png")" alt="Instagram"></a>
+            <a href="#"><img src="/Img/InstagramIcon.png" alt="Instagram"></a>
             <span>XXXXXX</span>
         </div>
     </div>
 </footer>
+
