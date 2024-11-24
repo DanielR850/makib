@@ -22,5 +22,9 @@ namespace PIA_PROGRAMACIONWEB.Controllers
         {
             return View();
         }
+        public IActionResult EventosEstatales()
+        {
+            return View();
+        }
     }
 }
