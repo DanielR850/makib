@@ -8,5 +8,9 @@ namespace PIA_PROGRAMACIONWEB.Controllers
         {
             return View();
         }
+        public IActionResult Historia()
+        {
+            return View();
+        }
     }
 }

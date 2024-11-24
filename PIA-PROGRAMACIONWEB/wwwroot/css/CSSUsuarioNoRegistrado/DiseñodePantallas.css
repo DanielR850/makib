@@ -1,0 +1,114 @@
+﻿body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: lightgoldenrodyellow;
+}
+
+.header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 20px;
+    width: 100%;
+    background-color: lightgoldenrodyellow;
+    box-sizing: border-box;
+    height: 150px;
+    position: relative;
+}
+
+    .header img {
+        margin-left: 0;
+        width: 150px;
+        height: 150px;
+        border-radius: 50%;
+        object-fit: cover;
+    }
+
+.volver-container {
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+#back-button {
+    padding: 10px 300px;
+    font-size: 18px;
+    background-color: white;
+    color: black;
+    border: 2px solid white;
+    border-radius: 20px;
+    cursor: pointer;
+    text-decoration: none;
+    transition: background-color 0.3s ease, border-color 0.3s ease;
+}
+
+    #back-button:hover {
+        background-color: lightgoldenrodyellow;
+        border-color: lightgoldenrodyellow;
+    }
+
+.login-button {
+    padding: 10px 20px;
+    background-color: white;
+    color: black;
+    font-size: 16px;
+    text-decoration: none;
+    border-radius: 20px;
+    border: 2px solid white;
+    transition: background-color 0.3s ease, border-color 0.3s ease;
+    margin-right: 0;
+    display: inline-block;
+}
+
+    .login-button:hover {
+        background-color: white;
+        border-color: white;
+    }
+
+hr {
+    border: none;
+    height: 10px;
+    background-color: red;
+    width: 100%;
+    margin-top: 0;
+}
+
+.historia {
+    margin: 70px;
+    text-align: justify;
+}
+
+.container {
+    display: flex;
+    justify-content: space-between;
+    margin: 100px;
+}
+
+.prueba {
+    width: 30%;
+    height: auto;
+    margin: 0 30px;
+}
+
+table {
+    width: 80%;
+    margin: 0 auto;
+    border-collapse: collapse;
+}
+
+th, td {
+    padding: 15px;
+    border: 1px solid #333;
+    text-align: left;
+    width: 20%;
+}
+
+th {
+    background-color: red;
+    color: white;
+}
+
+td {
+    background-color: lightgoldenrodyellow;
+}
