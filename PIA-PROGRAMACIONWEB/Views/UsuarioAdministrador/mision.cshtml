@@ -1,0 +1,52 @@
+﻿@{
+    ViewData["Title"] = "Mision";
+}
+
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Barra Lateral</title>
+    <link rel="stylesheet" href="@Url.Content("~/css/CSSUsuarioAdministrador/crud.css")" />
+</head>
+<body>
+    <header class="header">
+        <img src="@Url.Content("../img/UsuarioAdministrador/LogoOF.JPG")" alt="Usuario Administrador" width="150" height="150" />
+
+        <div class="search-container">
+            <a href="" id="editor" aria-label="Editor de información">Editor de información:</a>
+        </div>
+
+        <a href="/login" class="login-button" aria-label="Nombre del usuario-administrador">Nombre del usuario-administrador</a>
+    </header>
+
+    <hr>
+
+    <nav class="sidebar" aria-label="Menú de navegación">
+        <div class="info-box">
+            <div class="button-container">
+                <img src="@Url.Content("../img/UsuarioAdministrador/LogoOF.JPG")" alt="Usuario Administrador" width="100" height="100" />
+                <a href="" class="button">Home</a>
+                <a href="" class="button">Iniciar sesión</a>
+            </div>
+            <hr id="hr1">
+        </div>
+        <div class="menu">
+            <a href="acerca.cshtml" class="active">Acerca de nosotros</a>
+            <a href="historia.cshtml" class="inactive">Historia</a>
+            <a href="mision.cshtml" class="position">Misión</a>
+            <a href="nuestro_equipo.cshtml" class="inactive">Nuestro Equipo</a>
+            <a href="portafolio.cshtml">Portafolio</a>
+            <a href="cuentas.cshtml">Cuentas</a>
+            <a href="contactanos.cshtml">Contáctanos</a>
+            <a href="carrusel.cshtml">Carrusel</a>
+            <a href="audiciones.cshtml">Audiciones</a>
+            <a href="eventos.cshtml">Eventos</a>
+            <a href="ensayos.cshtml">Ensayos</a>
+            <a href="registro.cshtml">Registro de Asistencias</a>
+            <a href="reporte.cshtml">Reporte</a>
+        </div>
+    </nav>
+</body>
+</html>

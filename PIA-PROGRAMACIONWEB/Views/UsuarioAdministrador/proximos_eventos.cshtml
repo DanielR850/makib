@@ -1,0 +1,99 @@
+﻿@{
+    ViewData["Title"] = "Proximos Eventos";
+}
+
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Proximos Eventos</title>
+    <link rel="stylesheet" href="@Url.Content("~/css/CSSUsuarioAdministrador/crud.css")" />
+</head>
+<body>
+    <header class="header">
+        <img src="@Url.Content("../img/UsuarioAdministrador/LogoOF.JPG")" alt="Usuario Administrador" width="150" height="150" />
+
+        <div class="search-container">
+            <a href="" id="editor" aria-label="Editor de información">Editor de información:</a>
+        </div>
+
+        <a href="/login" class="login-button" aria-label="Nombre del usuario-administrador">Nombre del usuario-administrador</a>
+    </header>
+
+    <hr>
+
+    <nav class="sidebar" aria-label="Menú de navegación">
+        <div class="info-box">
+            <div id="agregar">
+                <a href="" id="agregar_cuenta">Agregar</a>
+            </div>
+            <div class="event-container">
+                <table>
+                    <tr>
+                        <th></th>
+                        <th></th>
+                        <th></th>
+                        <th></th>
+                        <th></th>
+                        <th></th>
+                        <th></th>
+                    </tr>
+                    <tr>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td>
+                            <a href="#" class="modify-button">Modificar evento</a>
+                            <a href="#" class="delete-button">Eliminar evento</a>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td>
+                            <a href="#" class="modify-button">Modificar evento</a>
+                            <a href="#" class="delete-button">Eliminar evento</a>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td>
+                            <a href="#" class="modify-button">Modificar evento</a>
+                            <a href="#" class="delete-button">Eliminar evento</a>
+                        </td>
+                    </tr>
+                </table>
+            </div>
+        </div>
+        <div class="menu">
+            <a href="acerca.cshtml">Acerca de nosotros</a>
+            <a href="portafolio.cshtml">Portafolio</a>
+            <a href="cuentas.cshtml">Cuentas</a>
+            <a href="contactanos.cshtml">Contáctanos</a>
+            <a href="carrusel.cshtml">Carrusel</a>
+            <a href="audiciones.cshtml">Audiciones</a>
+            <a href="eventos.cshtml" class="active">Eventos</a>
+            <a href="proximos_eventos.cshtml" class="position">Próximos Eventos</a>
+            <a href="asistencia_eventos.cshtml" class="inactive">Asistencia de Eventos</a>
+            <a href="ensayos.cshtml">Ensayos</a>
+            <a href="registro.cshtml">Registro de Asistencias</a>
+            <a href="reporte.cshtml">Reporte</a>
+        </div>
+    </nav>
+
+
+</body>
+</html>
