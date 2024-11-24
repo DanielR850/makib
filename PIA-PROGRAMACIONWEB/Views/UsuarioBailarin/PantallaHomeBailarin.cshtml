@@ -1,0 +1,67 @@
+﻿@{
+    ViewData["Title"] = "Bailarín";
+}
+@section Styles {
+    <link rel="stylesheet" href="~/css/CSSUsuarioBailarin/PantallaHomeBailarines.css" />
+}
+
+
+
+<header class="header">
+    <img src="~/Img/UsuarioBailarin/Logo.png" alt="Logo BAF" class="logo">
+    <h1>Bailarín</h1>
+    <div class="user-info">
+        <span>Nombre del Usuario</span>
+    </div>
+</header>
+
+<main>
+    <section class="actions text-center my-4">
+        <button class="btn">Asistencia a ensayos</button>
+        <button class="btn">Asistencia a audiciones</button>
+        <button class="btn">Asistencia a eventos</button>
+    </section>
+
+    <section class="hero text-center py-5 text-light" style="background: url('@Url.Content("~/img/background.jpg")') no-repeat center center / cover;">
+        <h2>Se agrega una frase icónica del ballet</h2>
+    </section>
+
+    <section class="gallery text-center py-4">
+        <button class="gallery-arrow" id="prevGallery">‹</button>
+        <div class="gallery-container d-inline-flex">
+            <img src="@Url.Content("~/img/gallery1.jpg")" alt="Imagen 1" class="gallery-item">
+            <img src="@Url.Content("~/img/gallery2.jpg")" alt="Imagen 2" class="gallery-item">
+            <img src="@Url.Content("~/img/gallery3.jpg")" alt="Imagen 3" class="gallery-item">
+        </div>
+        <button class="gallery-arrow" id="nextGallery">›</button>
+    </section>
+</main>
+
+<footer class="footer">
+    <div class="footer-header">
+        <span>Contactanos</span>
+        <button id="toggleFooter" class="toggle-button">⬆</button>
+    </div>
+    <div id="footerContent" class="footer-content">
+        <div class="carousel-container">
+            <button id="prevButton" class="carousel-button">⬅</button>
+            <div class="carousel">
+                <img src="@Url.Content("~/img/icon1.png")" alt="Icon1" class="carousel-item" />
+                <img src="@Url.Content("~/img/icon2.png")" alt="Icon2" class="carousel-item" />
+                <img src="@Url.Content("~/img/icon3.png")" alt="Icon3" class="carousel-item" />
+                <img src="@Url.Content("~/img/icon4.png")" alt="Icon4" class="carousel-item" />
+            </div>
+            <button id="nextButton" class="carousel-button">➡</button>
+        </div>
+        <div class="social-icons text-center mt-3">
+            <a href="#"><img src="@Url.Content("~/img/tiktok.png")" alt="TikTok"></a>
+            <span>XXXXXX</span>
+            <a href="#"><img src="@Url.Content("~/img/whatsapp.png")" alt="WhatsApp"></a>
+            <span>XXXXXX</span>
+            <a href="#"><img src="@Url.Content("~/img/facebook.png")" alt="Facebook"></a>
+            <span>XXXXXX</span>
+            <a href="#"><img src="@Url.Content("~/img/instagram.png")" alt="Instagram"></a>
+            <span>XXXXXX</span>
+        </div>
+    </div>
+</footer>
