@@ -17,5 +17,18 @@ namespace PIA_PROGRAMACIONWEB.Controllers
         {
             return View();
         }
+        public IActionResult PantallaAsistenciaEventos()
+        {
+        return View();
+        }
+        public IActionResult PantallaHistorialEnsayos()
+        {
+            return View();
+        }        
+        public IActionResult PantallaHistorialEventos()
+        {
+            return View();
+        }
+
     }
 }
