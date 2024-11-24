@@ -26,5 +26,13 @@ namespace PIA_PROGRAMACIONWEB.Controllers
         {
             return View();
         }
+        public IActionResult EventosNacionales()
+        {
+            return View();
+        }
+        public IActionResult EventosInternacionales()
+        {
+            return View();
+        }
     }
 }
