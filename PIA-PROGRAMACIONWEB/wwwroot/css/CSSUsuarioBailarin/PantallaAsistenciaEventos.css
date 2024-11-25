@@ -51,9 +51,9 @@ body {
 .user-box {
     background-color: white;
     border-radius: 15px;
-    padding: 10px 100px;
+    padding: 10px 20px;
     font-size: 16px;
-    font-weight: bold;  
+    font-weight: bold;
     color: #333;
 }
 /* Intro Section */

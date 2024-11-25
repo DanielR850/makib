@@ -61,7 +61,7 @@ body {
 .title-box {
     background-color: white;
     border-radius: 15px;
-    padding: 10px 100px;
+    padding: 10px 50px;
     font-size: 18px;
     font-weight: bold;
     color: #333;
@@ -75,7 +75,7 @@ body {
 .user-box {
     background-color: white;
     border-radius: 15px;
-    padding: 10px 100px;
+    padding: 10px 50px;
     font-size: 16px;
     font-weight: bold;
     color: #333;
@@ -178,7 +178,7 @@ body {
 }
 
 .red-line {
-    width: 100vw; /* Abarca todo el ancho de la pantalla */
+    width: 99vw; /* Abarca todo el ancho de la pantalla */
     height: 5px; /* Altura de la línea */
     background-color: red; /* Color de la línea */
     margin: 0; /* Elimina cualquier margen */
@@ -191,7 +191,7 @@ body {
     display: flex;
     flex-direction: column;
     align-items: center;
-    margin: 20px 0;
+    margin: 0 0;
 }
 
 .carousel-images {

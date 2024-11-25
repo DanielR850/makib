@@ -20,20 +20,20 @@
             <span class="title-box">Bailarín</span>
         </div>
         <div class="user-container">
-            <span class="user-box">Nombre del Usuario</span>
+            <span class="user-box">Usuario</span>
         </div>
     </header>
 
     <!-- Navbar -->
     <nav class="navbar">
         <ul class="nav-list">
-            <li class="nav-item"><a href="#" class="nav-link">Asistencia a ensayos</a></li>
-            <li class="nav-item"><a href="#" class="nav-link">Asistencia a eventos</a></li>
+            <li class="nav-item"><a asp-action="PantallaAsistenciaEnsayos" asp-controller="UsuarioBailarin" class="nav-link">Asistencia a ensayos</a></li>
+            <li class="nav-item"><a asp-action="PantallaAsistenciaEventos" asp-controller="UsuarioBailarin" class="nav-link">Asistencia a eventos</a></li>
             <li class="nav-item dropdown">
                 <a href="#" class="nav-link dropdown-toggle">Historial</a>
                 <ul class="dropdown-menu">
-                    <li><a href="#" class="dropdown-link">Historial de ensayos</a></li>
-                    <li><a href="#" class="dropdown-link">Historial de eventos</a></li>
+                    <li class="nav-item"><a asp-action="PantallaHistorialEnsayos" asp-controller="UsuarioBailarin" class="nav-link">Ensayos</a></li>
+                    <li class="nav-item"><a asp-action="PantallaHistorialEventos" asp-controller="UsuarioBailarin" class="nav-link">Eventos</a></li>
                 </ul>
             </li>
         </ul>
