@@ -1,3 +1,5 @@
+using PIA_PROGRAMACIONWEB.Models;
+
 namespace PIA_PROGRAMACIONWEB.Models
 {
     public class ErrorViewModel

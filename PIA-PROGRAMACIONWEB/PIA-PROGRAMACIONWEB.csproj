@@ -26,10 +26,6 @@
   </ItemGroup>
 
   <ItemGroup>
-    <Folder Include="Controllers\NewFolder\" />
-  </ItemGroup>
-
-  <ItemGroup>
     <Content Update="Views\UsuarioBailarin\PantallaAsistenciaEventos.cshtml">
       <ExcludeFromSingleFile>true</ExcludeFromSingleFile>
       <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
