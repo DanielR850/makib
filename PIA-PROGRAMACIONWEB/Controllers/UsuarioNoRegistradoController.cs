@@ -1,7 +1,9 @@
-﻿using Microsoft.AspNetCore.Mvc;
+﻿using Microsoft.AspNetCore.Authorization;
+using Microsoft.AspNetCore.Mvc;
 
 namespace PIA_PROGRAMACIONWEB.Controllers
 {
+    [AllowAnonymous]
     public class UsuarioNoRegistradoController : Controller
     {
         public IActionResult Home()

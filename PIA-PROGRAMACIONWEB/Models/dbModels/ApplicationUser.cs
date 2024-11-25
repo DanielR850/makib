@@ -8,6 +8,9 @@ namespace PIA_PROGRAMACIONWEB.Models.dbModels
     public class ApplicationUser : IdentityUser<int>
     {
 
+        public string Usuario { get; set; } = string.Empty;
+        public string Password { get; set; } = string.Empty;
+        public string Tipo { get; set; } = string.Empty;
 
 
 
