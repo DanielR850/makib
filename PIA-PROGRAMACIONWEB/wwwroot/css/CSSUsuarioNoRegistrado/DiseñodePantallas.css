@@ -13,7 +13,7 @@
     width: 100%;
     background-color: lightgoldenrodyellow;
     box-sizing: border-box;
-    height: 150px;
+    height: 200px;
     position: relative;
 }
 
@@ -66,29 +66,36 @@
         border-color: white;
     }
 
-hr {
-    border: none;
-    height: 10px;
+.line {
+    height: 8px;
     background-color: red;
     width: 100%;
-    margin-top: 0;
+    position: absolute;
+    top: 200px;
+    left: 0;
+    z-index: 1000;
 }
 
-.historia {
-    margin: 70px;
+.titulo {
+    margin-top: 80px;
     text-align: justify;
+}
+
+.info{
+    margin-top: 30px;
+    text-align:justify;
 }
 
 .container {
     display: flex;
     justify-content: space-between;
-    margin: 100px;
+    margin: auto;
 }
 
 .prueba {
-    width: 30%;
+    width: 20%;
     height: auto;
-    margin: 0 30px;
+    margin: 30px;
 }
 
 table {
