@@ -1,64 +1,52 @@
-﻿@{
-    ViewData["Title"] = "Home";
-}
-
-<<<<<<< HEAD
-
-<!DOCTYPE html>
-<html lang="en">
-=======
-<!DOCTYPE html>
-<html lang="en">
-
->>>>>>> 3d9450a9ab607bd017e1a3f02cd207ff01a81cb4
+﻿<!DOCTYPE html>
+<html lang="es">
 <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="~/lib/bootstrap/dist/css/bootstrap.min.css" />
-<<<<<<< HEAD
     <link rel="stylesheet" href="~/css/CSSUsuarioNoRegistrado/Home.css" />
     <link rel="stylesheet" href="~/PIA_PROGRAMACIONWEB.styles.css" asp-append-version="true" />
-=======
     <link rel="stylesheet" href="@Url.Content("~/css/CSSUsuarioNoRegistrado/Home.css")" />
->>>>>>> 3d9450a9ab607bd017e1a3f02cd207ff01a81cb4
 </head>
-
 <body>
-    <div class="header">
+    <header>
+        <div class="header">
         <img src="~/Img/UsuarioNoRegistrado/ImgLogo.jpg" alt="LogoOF" width="150" height="150">
 
-        <a href="../UsuarioBailarin/Iniciar-Sesion.html" class="login-button">Iniciar sesión</a>
+        <a href="../Views/Home/IniciarSesion.cshtml" class="login-button">Iniciar sesión</a>
     </div>
+    </header>
 
-    <div class="dropdown">
+    <main>
+            <div class="dropdown">
         <button class="dropbtn">Acerca de nosotros</button>
         <div class="dropdown-content">
-            <a href="Pantalla Historia.html">Historia</a>
-            <a href="Pantalla Mision.html">Mision</a>
-            <a href="Pantalla Nuestro Equipo.html">Nuestro equipo</a>
+            <a asp-action="Historia" asp-controller="UsuarioNoRegistrado">Historia</a>
+            <a asp-action="Mision" asp-controller="UsuarioNoRegistrado">Mision</a>
+            <a asp-action="NuestroEquipo" asp-controller="UsuarioNoRegistrado">Nuestro Equipo</a>
         </div>
     </div>
 
     <div class="dropdown">
         <button class="dropbtn">Portafolio</button>
         <div class="dropdown-content">
-            <a href="Pantalla Eventos Estatales.html">Eventos Estatales</a>
-            <a href="Pantalla Eventos Nacionales.html">Eventos Nacionales</a>
-            <a href="Pantalla Eventos Internacionales.html">Eventos Internacionales</a>
+            <a asp-action="EventosEstatales" asp-controller="UsuarioNoRegistrado">Eventos Estatales</a>
+            <a asp-action="EventosNacionales" asp-controller="UsuarioNoRegistrado">Eventos Nacionales</a>
+            <a asp-action="EventosInternacionales" asp-controller="UsuarioNoRegistrado">Eventos Internacionales</a>
         </div>
     </div>
 
     <div class="dropdown">
         <button class="dropbtn">Proximos Eventos</button>
         <div class="dropdown-content">
-            <a href="Pantalla Proximos Eventos.html">Proximos Eventos</a>
+            <a asp-action="ProximosEventos" asp-controller="UsuarioNoRegistrado">Proximos Eventos</a>
         </div>
     </div>
 
     <div class="dropdown">
         <button class="dropbtn">Audiciones</button>
         <div class="dropdown-content">
-            <a href="Pantalla Audiciones.html">Audiciones</a>
+            <a asp-action="Audiciones" asp-controller="UsuarioNoRegistrado">Audiciones</a>
         </div>
     </div>
 
@@ -67,8 +55,10 @@
     </h2>
 
     <hr>
+    </main>
 
-    <div class="container-fluid fixed-bottom p-0 custom-carousel-container">
+    <footer>
+         <div class="container-fluid fixed-bottom p-0 custom-carousel-container">
         <div id="customCarousel" class="carousel slide" data-bs-ride="carousel">
             <div class="carousel-inner">
                 <div class="carousel-item active">
@@ -126,13 +116,8 @@
             </div>
         </div>
     </div>
+    </footer>
 
-    <script src="~/js/JSUsuarioNoRegistrado/Home.js"></script>
+    <script src="~/js/JsUsuarioNoRegistrado/Home.js"></script>
 </body>
-
-<<<<<<< HEAD
-=======
-        <script src="~/js/JsUsuarioNoRegistrado/Home.js"></script>
-    </body>
->>>>>>> 3d9450a9ab607bd017e1a3f02cd207ff01a81cb4
 </html>
