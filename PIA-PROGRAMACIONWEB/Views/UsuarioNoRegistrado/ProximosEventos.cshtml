@@ -14,58 +14,65 @@
 </head>
 
 <body>
-    <div class="header">
-        <img src="~/Img/UsuarioNoRegistrado/ImgLogo.jpg" alt="LogoOF" width="150" height="150">
+    <header>
+        <div class="header">
+            <img src="~/Img/UsuarioNoRegistrado/ImgLogo.jpg" alt="LogoOF" width="150" height="150">
 
-        <div class="search-container">
-            <a asp-action="Home" asp-controller="UsuarioNoRegistrado" id="back-button">HOME</a>
+            <div class="search-container">
+                <a asp-action="Home" asp-controller="UsuarioNoRegistrado" id="back-button">HOME</a>
+            </div>
+
+            <a href="../UsuarioBailarin/Iniciar-Sesion.html" class="login-button">Iniciar sesión</a>
         </div>
 
-        <a href="../UsuarioBailarin/Iniciar-Sesion.html" class="login-button">Iniciar sesión</a>
-    </div>
+        <div class="line">
+            <hr>
+        </div>
+    </header>
 
-    <hr>
-    <h1 class="historia">PROXIMOS EVENTOS</h1>
-    <p class="historia">
-        Lorem ipsum dolor sit amet consectetur adipisicing elit. Ullam repellendus obcaecati, sequi nesciunt quas eius
-        fugit illo libero. Quis unde magnam facere vero soluta,
-        voluptatibus quam odio consequatur molestias Lorem ipsum, dolor sit amet consectetur adipisicing elit.
-    </p>
+    <main>
+        <h1 class="titulo">PROXIMOS EVENTOS</h1>
+        <p class="info">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Ullam repellendus obcaecati, sequi nesciunt quas eius
+            fugit illo libero. Quis unde magnam facere vero soluta,
+            voluptatibus quam odio consequatur molestias Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+        </p>
 
-    <table>
-        <thead>
-            <tr>
-                <th>EVENTO</th>
-                <th>FECHA</th>
-                <th>LUGAR</th>
-                <th>HORA</th>
-                <th>BOLETOS</th>
-            </tr>
-        </thead>
-        <tbody>
-            <tr>
-                <td>xxxxx</td>
-                <td>xxxxx</td>
-                <td>xxxxx</td>
-                <td>xxxxx</td>
-                <td>xxxxx</td>
-            </tr>
-            <tr>
-                <td>xxxxx</td>
-                <td>xxxxx</td>
-                <td>xxxxx</td>
-                <td>xxxxx</td>
-                <td>xxxxx</td>
-            </tr>
-            <tr>
-                <td>xxxxx</td>
-                <td>xxxxx</td>
-                <td>xxxxx</td>
-                <td>xxxxx</td>
-                <td>xxxxx</td>
-            </tr>
-        </tbody>
-    </table>
+        <table>
+            <thead>
+                <tr>
+                    <th>EVENTO</th>
+                    <th>FECHA</th>
+                    <th>LUGAR</th>
+                    <th>HORA</th>
+                    <th>BOLETOS</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>xxxxx</td>
+                    <td>xxxxx</td>
+                    <td>xxxxx</td>
+                    <td>xxxxx</td>
+                    <td>xxxxx</td>
+                </tr>
+                <tr>
+                    <td>xxxxx</td>
+                    <td>xxxxx</td>
+                    <td>xxxxx</td>
+                    <td>xxxxx</td>
+                    <td>xxxxx</td>
+                </tr>
+                <tr>
+                    <td>xxxxx</td>
+                    <td>xxxxx</td>
+                    <td>xxxxx</td>
+                    <td>xxxxx</td>
+                    <td>xxxxx</td>
+                </tr>
+            </tbody>
+        </table>
+    </main>
 
     <script src="~/js/JsUsuarioNoRegistrado/Home.js"></script>
 </body>
