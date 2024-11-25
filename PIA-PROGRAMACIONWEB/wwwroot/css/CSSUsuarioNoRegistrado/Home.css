@@ -21,7 +21,7 @@
     display: flex;
     align-items: center;
     justify-content: space-between;
-    padding: 0 20px;
+    padding: 0 0px;
     width: 100%;
     box-sizing: border-box;
     height: 150px;
@@ -80,7 +80,7 @@
 .dropdown {
     position: relative;
     display: inline-block;
-    margin: 50px 80px;
+    margin: 25px 40px;
 }
 
 
@@ -118,12 +118,12 @@
 }
 
 hr {
-    border: none;
-    height: 10px;
+    border: 100px;
+    height: 50px;
     background-color: red;
     width: 100%;
     position: absolute;
-    transform: translate(-20px, 125px);
+    transform: translate(0px, 125px);
     z-index: 1000;
 }
 
@@ -142,14 +142,14 @@ hr {
     display: flex;
     justify-content: center;
     gap: 5px;
-    padding: 0 5%;
+    padding: 1% 10%;
 }
 
 .custom-carousel-img {
     width: 80px;
     height: 80px;
     object-fit: cover;
-    margin: 0 5px;
+    margin: 0 10px;
     border-radius: 5px;
     background-color: lightgoldenrodyellow;
 }
@@ -164,7 +164,6 @@ hr {
 .carousel-control-next {
     width: 5%;
 }
-
 
 .contact-us-button {
     position: fixed;

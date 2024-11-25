@@ -3,7 +3,7 @@ using Microsoft.AspNetCore.Mvc.RazorPages;
 
 namespace PIA_PROGRAMACIONWEB.Views.UsuarioNoRegistrado
 {
-    public class HistoriaModel : PageModel
+    public class HomeModel : PageModel
     {
         public void OnGet()
         {

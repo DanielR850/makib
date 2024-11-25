@@ -1,10 +1,11 @@
-﻿using Microsoft.AspNetCore.Mvc;
+﻿using Microsoft.AspNetCore.Authorization;
+using Microsoft.AspNetCore.Mvc;
 
 namespace PIA_PROGRAMACIONWEB.Controllers
 {
+    [Authorize(Roles = "Bailarín")]
     public class UsuarioBailarinController : Controller
     {
-        // Acción para la página Index
         public IActionResult Index()
         {
             return View();

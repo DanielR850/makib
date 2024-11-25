@@ -13,7 +13,7 @@ namespace PIA_PROGRAMACIONWEB.Migrations
 {
     [DbContext(typeof(ProgramacionWebContext))]
     [Migration("20241120000732_init")]
-    partial class init
+    public partial class InitialMigration : Migration
     {
         /// <inheritdoc />
         protected override void BuildTargetModel(ModelBuilder modelBuilder)
@@ -767,6 +767,11 @@ namespace PIA_PROGRAMACIONWEB.Migrations
                     b.Navigation("Eventos");
                 });
 #pragma warning restore 612, 618
+        }
+
+        protected override void Up(MigrationBuilder migrationBuilder)
+        {
+            throw new NotImplementedException();
         }
     }
 }
