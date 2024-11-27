@@ -20,7 +20,7 @@
             <span class="title-box">Bailarín</span>
         </div>
         <div class="user-container">
-            <span class="user-box">Nombre del Usuario</span>
+            <span class="user-box">Usuario</span>
         </div>
     </header>
 
@@ -32,8 +32,13 @@
             <li class="nav-item dropdown">
                 <a href="#" class="nav-link dropdown-toggle">Historial</a>
                 <ul class="dropdown-menu">
+
                     <li><a asp-action="PantallaHistorialEnsayos" asp-controller="UsuarioBailarin" class="dropdown-link">Historial de ensayos</a></li>
                     <li><a asp-action="PantallaHistorialEventos" asp-controller="UsuarioBailarin" class="dropdown-link">Historial de eventos</a></li>
+
+                    <li class="nav-item"><a asp-action="PantallaHistorialEnsayos" asp-controller="UsuarioBailarin" class="nav-link">Ensayos</a></li>
+                    <li class="nav-item"><a asp-action="PantallaHistorialEventos" asp-controller="UsuarioBailarin" class="nav-link">Eventos</a></li>
+
                 </ul>
             </li>
         </ul>

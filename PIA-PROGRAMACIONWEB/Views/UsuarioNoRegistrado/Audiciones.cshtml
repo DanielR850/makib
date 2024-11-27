@@ -2,9 +2,9 @@
     ViewData["Title"] = "Audiciones";
 }
 
-
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -14,44 +14,52 @@
 </head>
 
 <body>
-    <div class="header">
-        <img src="~/Img/UsuarioNoRegistrado/ImgLogo.jpg" alt="LogoOF" width="150" height="150">
+    <header>
+        <div class="header">
+            <img src="~/Img/UsuarioNoRegistrado/ImgLogo.jpg" alt="LogoOF" width="150" height="150">
 
-        <div class="search-container">
-            <button id="back-button">HOME</button>
+            <div class="search-container">
+                <a asp-action="Home" asp-controller="UsuarioNoRegistrado" id="back-button">HOME</a>
+            </div>
+
+            <a href="../UsuarioBailarin/Iniciar-Sesion.html" class="login-button">Iniciar sesión</a>
         </div>
 
-        <a href="../UsuarioBailarin/Iniciar-Sesion.html" class="login-button">Iniciar sesión</a>
-    </div>
+        <div class="line">
+            <hr>
+        </div>
+    </header>
 
-    <hr>
+    <main>
 
-    <h1 class="historia">AUDICIONES</h1>
-    <p class="historia">
-        Lorem ipsum dolor sit amet consectetur adipisicing elit. Ullam repellendus obcaecati, sequi nesciunt quas eius
-        fugit illo libero. Quis unde magnam facere vero soluta,
-        voluptatibus quam odio consequatur molestias Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ipsam,
-        consequatur tenetur accusamus culpa modi debitis? Nisi quibusdam
-        omnis in neque illo nulla facere enim et voluptatibus! Nesciunt pariatur mollitia amet. Lorem, ipsum dolor sit
-        amet consectetur adipisicing elit. Iure, autem quia atque, qui,
-        enim quidem vitae officiis tenetur illo voluptatum suscipit! Nisi eius veniam at saepe expedita incidunt
-        mollitia qui! Lorem, ipsum dolor sit amet consectetur adipisicing elit.
-    </p>
+        <h1 class="titulo">AUDICIONES</h1>
+        <p class="info">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Ullam repellendus obcaecati, sequi nesciunt quas eius
+            fugit illo libero. Quis unde magnam facere vero soluta,
+            voluptatibus quam odio consequatur molestias Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ipsam,
+            consequatur tenetur accusamus culpa modi debitis? Nisi quibusdam
+            omnis in neque illo nulla facere enim et voluptatibus! Nesciunt pariatur mollitia amet. Lorem, ipsum dolor sit
+            amet consectetur adipisicing elit. Iure, autem quia atque, qui,
+            enim quidem vitae officiis tenetur illo voluptatum suscipit! Nisi eius veniam at saepe expedita incidunt
+            mollitia qui! Lorem, ipsum dolor sit amet consectetur adipisicing elit.
+        </p>
 
-    <div class="container">
-        <img class="prueba" src="~/Img/UsuarioNoRegistrado/Prueba.jpeg" alt="Imagen 1">
-        <img class="prueba" src="~/Img/UsuarioNoRegistrado/Prueba.jpeg" alt="Imagen 2">
-    </div>
+        <div class="container">
+            <img class="prueba" src="~/Img/UsuarioNoRegistrado/Prueba.jpeg" alt="Imagen 1">
+            <img class="prueba" src="~/Img/UsuarioNoRegistrado/Prueba.jpeg" alt="Imagen 2">
+        </div>
 
-    <p class="historia">
-        Favor de llenar el siguiente forms si le interesa formar parte de nuestro equipo de bailarines:
-    </p>
-    <link rel="stylesheet" href="https://forms.office.com/">
+        <p class="historia">
+            Favor de llenar el siguiente forms si le interesa formar parte de nuestro equipo de bailarines:
+        </p>
+        <link rel="stylesheet" href="https://forms.office.com/">
 
-    <div class="container">
-        <img class="prueba" src="~/Img/UsuarioNoRegistrado/Prueba.jpeg" alt="Imagen 1">
-    </div>
+        <div class="container">
+            <img class="prueba" src="~/Img/UsuarioNoRegistrado/Prueba.jpeg" alt="Imagen 1">
+        </div>
+    </main>
 
     <script src="~/js/JsUsuarioNoRegistrado/Home.js"></script>
 </body>
+
 </html>

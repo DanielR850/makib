@@ -21,7 +21,7 @@
     display: flex;
     align-items: center;
     justify-content: space-between;
-    padding: 0 20px;
+    padding: 0 0px;
     width: 100%;
     box-sizing: border-box;
     height: 150px;
@@ -80,7 +80,7 @@
 .dropdown {
     position: relative;
     display: inline-block;
-    margin: 50px 80px;
+    margin: 20px 65px;
 }
 
 
@@ -93,6 +93,7 @@
     border: none;
     cursor: pointer;
 }
+
 
 .dropdown-content {
     display: none;
@@ -116,20 +117,21 @@
     transform: translate(0px, 70px);
 }
 
-hr {
-    border: none;
-    height: 10px;
-    background-color: red;
-    width: 100%;
+.line {
+    height: 8px; 
+    background-color: red; 
+    width: 100%; 
     position: absolute;
-    transform: translate(-20px, 125px);
-    z-index: 1000;
+    top: 500px;
+    left: 0; 
+    z-index: 1000; 
 }
 
 .custom-carousel-container {
     background-color: #f8f9fa;
     padding: 10px 0;
     height: 130px;
+    box-shadow: 0 -2px 10px rgba(0, 0, 0, 0.2);
 }
 
 .carousel-inner {
@@ -140,29 +142,43 @@ hr {
 .carousel-item {
     display: flex;
     justify-content: center;
-    gap: 5px;
-    padding: 0 5%;
+    gap: 10px;
+    padding: 1% 10%;
+    transition: transform 0.5s ease-in-out;
 }
 
 .custom-carousel-img {
     width: 80px;
     height: 80px;
     object-fit: cover;
-    margin: 0 5px;
+    margin: 0 10px;
     border-radius: 5px;
     background-color: lightgoldenrodyellow;
+    border: 2px solid #ddd;
+    transition: transform 0.3s ease-in-out, border-color 0.3s;
 }
+
+    .custom-carousel-img:hover {
+        transform: scale(1.1);
+        border-color: #333;
+    }
 
 .carousel-control-prev-icon,
 .carousel-control-next-icon {
     background-color: black;
     border-radius: 50%;
+    opacity: 0.8;
 }
 
 .carousel-control-prev,
 .carousel-control-next {
     width: 5%;
 }
+
+    .carousel-control-prev:hover .carousel-control-prev-icon,
+    .carousel-control-next:hover .carousel-control-next-icon {
+        opacity: 1;
+    }
 
 
 .contact-us-button {
@@ -217,6 +233,7 @@ hr {
     display: none;
     position: fixed;
     left: 0;
+    top: 380px;
     width: 100%;
     background-color: black;
     box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
