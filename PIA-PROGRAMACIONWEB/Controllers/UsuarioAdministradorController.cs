@@ -3,7 +3,6 @@ using Microsoft.AspNetCore.Mvc;
 
 namespace PIA_PROGRAMACIONWEB.Controllers
 {
-    [Authorize(Roles = "Administrador")]
     public class UsuarioAdministradorController : Controller
     {
         public IActionResult crud()

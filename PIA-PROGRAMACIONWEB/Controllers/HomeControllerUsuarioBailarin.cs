@@ -3,7 +3,6 @@ using Microsoft.AspNetCore.Mvc;
 
 namespace PIA_PROGRAMACIONWEB.Controllers
 {
-    [Authorize(Roles = "Bailarín")]
     public class UsuarioBailarinController : Controller
     {
         public IActionResult Index()

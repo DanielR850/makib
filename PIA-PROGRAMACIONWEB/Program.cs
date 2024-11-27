@@ -33,14 +33,15 @@ builder.Services.AddIdentity<ApplicationUser, IdentityRole<int>>(options =>
 
 builder.Services.AddControllersWithViews();
 builder.Services.AddRazorPages();
-builder.Services.ConfigureApplicationCookie(options =>
-{
-    options.LoginPath = "/Shared/IniciarSesion";
-    options.LogoutPath = "";
-});
+
+
+
 var app = builder.Build();
 
 // Configure the HTTP request pipeline.
+app.MapControllerRoute(
+    name: "default",
+    pattern: "{controller=Home}/{action=Index}/{id?}");
 
 
 app.UseHttpsRedirection();

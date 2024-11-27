@@ -3,9 +3,12 @@ using Microsoft.AspNetCore.Mvc;
 
 namespace PIA_PROGRAMACIONWEB.Controllers
 {
-    [AllowAnonymous]
     public class UsuarioNoRegistradoController : Controller
     {
+        public IActionResult IniciarSesion()
+        {
+            return View();
+        }
         public IActionResult Home()
         {
             return View();

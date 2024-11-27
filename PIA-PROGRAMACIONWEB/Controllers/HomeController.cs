@@ -22,6 +22,11 @@ namespace PIA_PROGRAMACIONWEB.Controllers
         {
             return View();
         }
+        public IActionResult IniciarSesion()
+        {
+            return View();
+        }
+
 
         [ResponseCache(Duration = 0, Location = ResponseCacheLocation.None, NoStore = true)]
         public IActionResult Error()

@@ -27,13 +27,13 @@
     <!-- Navbar -->
     <nav class="navbar">
         <ul class="nav-list">
-            <li class="nav-item"><a href="#" class="nav-link">Asistencia a ensayos</a></li>
-            <li class="nav-item"><a href="#" class="nav-link">Asistencia a eventos</a></li>
+            <li class="nav-item"><a asp-action="PantallaAsistenciaEnsayos" asp-controller="UsuarioBailarin" class="nav-link">Asistencia a ensayos</a></li>
+            <li class="nav-item"><a asp-action="PantallaAsistenciaEventos" asp-controller="UsuarioBailarin" class="nav-link">Asistencia a eventos</a></li>
             <li class="nav-item dropdown">
                 <a href="#" class="nav-link dropdown-toggle">Historial</a>
                 <ul class="dropdown-menu">
-                    <li><a href="#" class="dropdown-link">Historial de ensayos</a></li>
-                    <li><a href="#" class="dropdown-link">Historial de eventos</a></li>
+                    <li><a asp-action="PantallaHistorialEnsayos" asp-controller="UsuarioBailarin" class="dropdown-link">Historial de ensayos</a></li>
+                    <li><a asp-action="PantallaHistorialEventos" asp-controller="UsuarioBailarin" class="dropdown-link">Historial de eventos</a></li>
                 </ul>
             </li>
         </ul>
